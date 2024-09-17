@@ -4,8 +4,9 @@ import Start from './Start';
 
 const Auth = () => {
     const[login,setLogin] = useState(false);
-    const[pass,setPass] = useState(false);
+    const[pass,setPass] = useState(true);
     const[lets,setLets] = useState(false);
+    const[focus,setFocus] = useState(false);
     const closes = () => {
         setLets(true);
     }
@@ -19,10 +20,10 @@ const Auth = () => {
             </div>
             <form action="" className={` ${!login?"mt-8 gap-3":""} w-[90%] mx-auto mt-10 flex flex-col gap-1`}>
                 {login?<input type="text" placeholder='Name' className='w-full px-3 py-2 rounded-lg border-[1px] outline-none focus:shadow-md formname text-2xl' required />:""}
-                <input type="email" placeholder='Email' className='w-full px-3 py-2 rounded-lg border-[1px] outline-none focus:shadow-md text-2xl' required autoFocus/>
+                <input type="email" placeholder='Email' className='w-full px-3 py-2 rounded-lg border-[1px] outline-none focus:shadow-md text-2xl' required />
                 <label className='relative'>
                 <input type={`${pass?"Password":"text"}`} placeholder='Password' className='w-full px-3 py-2 rounded-lg border-[1px] outline-none focus:shadow-md relative text-2xl' required  />
-                {pass?<i className="ri-eye-off-line absolute right-4 text-zinc-400 cursor-pointer top-2" onClick={()=>setPass(false)}></i>:<i className="ri-eye-line absolute right-4 text-zinc-600 cursor-pointer top-2" onClick={()=>setPass(true)}></i>}
+                {pass?<i className="ri-eye-off-line absolute right-4 text-zinc-400 cursor-pointer top-3 text-xl" onClick={()=>setPass(false)}></i>:<i className="ri-eye-line absolute right-4 text-zinc-600 cursor-pointer top-3 text-xl" onClick={()=>setPass(true)}></i>}
                 </label>
                 <label className='text-lg font-semibold text-zinc-500 flex flex-row items-start pt-2 pl-2 cursor-pointer gap-2 '>
             <input type="checkbox" name="option1"  className='mt-1 cursor-pointer shadow-2xl largerCheckbox' required/>

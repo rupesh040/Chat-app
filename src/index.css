@@ -197,7 +197,7 @@ height: 535px;
     }
     50%{
         transform: translatey(-100%);
-        scale: 1.7;
+        scale: 1.2;
     }
     100%{
         transform: translate(0%);
