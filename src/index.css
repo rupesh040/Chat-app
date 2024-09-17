@@ -1,0 +1,212 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{overflow: hidden;}
+*{
+    box-sizing: border-box;
+}
+.glass{
+background: rgba(255, 255, 255, 0.7);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(6.9px);
+}
+.btn{
+/* https://smoothshadows.com/#djEsMiwxMCwwLjEzLDI2LDIyLDAsIzAzMDcxMiwjZjNmNGY2LCNmZmZmZmYsMg%3D%3D */
+box-shadow: 0px 0px 0px rgba(3, 7, 18, 0.13),
+  0px 1px 1px rgba(3, 7, 18, 0.12),
+  0px 2px 2px rgba(3, 7, 18, 0.10),
+  0px 4px 4px rgba(3, 7, 18, 0.09),
+  0px 6px 7px rgba(3, 7, 18, 0.08),
+  0px 8px 9px rgba(3, 7, 18, 0.07),
+  0px 11px 13px rgba(3, 7, 18, 0.05),
+  0px 14px 17px rgba(3, 7, 18, 0.04),
+  0px 18px 21px rgba(3, 7, 18, 0.03),
+  0px 22px 26px rgba(3, 7, 18, 0.01);
+
+}
+.overlay{
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 70%, rgba(255,255,255,0.01) 100%);
+}
+.iphone{
+/* https://smoothshadows.com/#djEsMiw0LDAuMjgsMjE4LDAsMCwjMDMwNzEyLCNmM2Y0ZjYsI2ZmZmZmZiwy */
+box-shadow: 0px 0px 14px rgba(3, 7, 18, 0.28),
+  0px 0px 55px rgba(3, 7, 18, 0.21),
+  0px 0px 123px rgba(3, 7, 18, 0.14),
+  0px 0px 218px rgba(3, 7, 18, 0.07);
+animation: iphone .3s ease-in-out;
+}
+@keyframes iphone {
+    0%{
+        transform: translateY(300px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+.message1{
+
+    animation: message .8s ease-in-out;
+    /* animation-delay: .3s; */
+}
+.message2{
+
+    animation: message 1.2s ease-in-out;
+    /* animation-delay: .3s; */
+}
+@keyframes message {
+    0%{
+        transform: translateY(250px);
+        scale: 0.5;
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        scale: 1;
+        opacity: 1;
+    }
+}
+
+.text{
+    animation: text .8s ease-in-out;
+}
+
+@keyframes text {
+    0%{
+        transform: translateY(25px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+.text2{
+    animation: text2 .8s ease-in-out;
+}
+
+@keyframes text2 {
+    0%{
+        filter: blur(10px);
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+        filter: blur(0px);
+    }
+}
+.name{
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    opacity: .5;
+}
+
+.anime{
+    animation: load .5s ease-in-out;
+}
+@keyframes load {
+    0%{
+        transform: translatey(100%);
+        opacity: 0;
+        filter: blur(100px);
+    }
+    100%{
+        opacity: 1;
+        transform: translatey(0%);
+        filter: blur(0px);
+        }
+}
+
+.log{
+    animation: logs .2s ease-in-out;
+}
+
+
+@keyframes logs {
+    0%{
+        transform: translatex(100%);
+        filter: blur(1px);
+    }
+    100%{
+        transform: translatex(0);
+        filter: blur(0px);
+        }
+}
+
+.log2{
+    animation: logs2 .2s ease-in-out ;
+}
+
+@keyframes logs2 {
+    0%{
+        transform: translatex(-100%);
+        filter: blur(1px);
+    }
+    100%{
+        transform: translatex(0);
+        filter: blur(0px);
+        }
+}
+.formname{
+    animation: name .5s ease-in-out ;
+}
+@keyframes name {
+    0%{
+        transform: translatey(-10%);
+        filter: blur(10px);
+    }
+    100%{
+        transform: translatey(0);
+        filter: blur(0px);
+        }
+}
+
+.LoginIphone{
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+    height: 555px; */
+    transform: translatey(0);
+     animation: LogIphone 1s ease-in-out ;
+     z-index: 9;
+     box-shadow: 2px 1px 1px rgba(0,0,0,0.11),
+     3px 2px 2px rgba(0,0,0,0.11),
+     4px 4px 4px rgba(0,0,0,0.11),
+     5px 8px 8px rgba(0,0,0,0.11),
+     6px 16px 16px rgba(0,0,0,0.11),
+     7px 32px 32px rgba(0,0,0,0.11);
+}
+.iphonein{
+height: 535px;
+}
+
+@keyframes LogIphone {
+    0%{
+        transform: translatey(0%);
+        z-index: 0;
+        scale: 1;
+    }
+    20%{
+        scale: 0.8;
+    }
+    50%{
+        transform: translatey(-100%);
+        scale: 1.7;
+    }
+    100%{
+        transform: translate(0%);
+        z-index: 9;
+        }
+}
+input.largerCheckbox {
+    width: 30px;
+    border-radius: 50px;
+    outline: none;
+    height: 20px;
+}
