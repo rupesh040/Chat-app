@@ -29,7 +29,7 @@ const Auth = () => {
             <p>
             Lorem ipsum, dolor sit amet  quisquam!</p>
            </label>
-           <button type='submit' className='text-xl font-bold w-full bg-zinc-900 btn py-3 text-white rounded-lg  mt-28'>{login?"Signup":" Login"}</button>
+           <button type='submit' className='text-xl font-bold w-full bg-zinc-900 btn py-3 text-white rounded-lg  mt-24'>{login?"Signup":" Login"}</button>
             </form>
             <div className='max-w-[40%] mx-auto text-[12px] text-center mt-5 pt-3 text-zinc-400 border-t-[1px] border-zinc-200 cursor-pointer group' >@rupesh_kw
             {/* <div className={`w-60 hidden h-40 absolute bg-white ${login?"top-64":"top-60"} left-16 rounded-xl glass border-[1px] shadow-2xl group-hover:block `}>
