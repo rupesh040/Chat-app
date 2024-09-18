@@ -5,7 +5,8 @@ const Start = () => {
     const[show,setShow] = useState(false)
   return (
     <div className='w-[100vw] h-[100vh] flex justify-center items-center flex-col overflow-hidden'>
-        <h1 className='absolute z-[-1] font-bold top-0 text-center text-[300px] text-zinc-400 name max-[1080px]:text-[250px] max-[900px]:text-[200px] max-[900px]:top-10 max-[780px]:text-[150px] max-[780px]:top-20 max-[680px]:text-[100px]'>{!show?"Rupesh.":"Hyweb"}</h1>
+        {!show?
+        <h1 className='absolute z-[-1] font-bold top-0 text-center text-[300px] text-zinc-400 name max-[1080px]:text-[250px] max-[900px]:text-[200px] max-[900px]:top-10 max-[780px]:text-[150px] max-[780px]:top-20 max-[680px]:text-[100px] overflow-hidden'> <span className='txtname'> Rup</span><span className='txtname2'>esh.</span> </h1>:<h1 className='absolute z-[-1] font-bold top-0 text-center text-[300px] text-zinc-400 name max-[1080px]:text-[250px] max-[900px]:text-[200px] max-[900px]:top-10 max-[780px]:text-[150px] max-[780px]:top-20 max-[680px]:text-[100px]'>Hyweb.</h1>}
 
         {/* Iphone  */}
         <div className={` w-[300px] h-[555px] rounded-[50px] bg-black flex justify-center items-center iphone ${show?"LoginIphone":""} `}>
