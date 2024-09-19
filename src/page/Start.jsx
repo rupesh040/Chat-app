@@ -13,7 +13,7 @@ const Start = () => {
           <div className={`${show?"bg-[#f4f4f4]":""}  w-[280px] h-[535px] rounded-[40px] bg-[#f4f4f4] flex justify-center items-center relative `}>
             <div className={`${show?"z-10":" z-0"} absolute top-2 w-24 rounded-full h-6  bg-black  `}></div>
             {show?null:<> <p className='font-bold text-[15px] text-white z-10 absolute top-14'> Monday June 8</p>
-            <h1 className='font-bold text-[50px] text-white z-10 absolute top-16'>09:41</h1></>}
+            <h1 className='font-bold text-[50px] text-white z-10 absolute top-16'> 09:41</h1></>}  
 
            <div className={` ${show?"z-10 top-[-5%] left-[-20%]":" z-0"} absolute top-0 opacity-55 blur-[50px] w-full  h-20 bg-purple-500 rotate-[-40deg] `} ></div>
            <div className={`${show?"hidden":" z-0"} absolute top-32 left-5 opacity-25 blur-[60px] w-full  h-20 bg-blue-500 rotate-[-40deg]`}></div>
