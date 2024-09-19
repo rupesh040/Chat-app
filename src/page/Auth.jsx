@@ -19,14 +19,14 @@ const Auth = () => {
                 <h1 className={`${!login? "bg-white text-black shadow-md border-[1px] log2":""} px-8 py-3 text-xl rounded-lg cursor-pointer`} onClick={()=>setLogin(false)}> Login</h1>
             </div>
             <form action="" className={` ${!login?"mt-8 gap-3":""} w-[90%] mx-auto mt-10 flex flex-col gap-1`}>
-                {login?<input type="text" placeholder='Name' className='w-full px-3 py-3 rounded-lg border-[1px] outline-none focus:shadow-md formname text-2xl' required />:""}
-                <input type="email" placeholder='Email' className='w-full px-3 py-2 rounded-lg border-[1px] outline-none focus:shadow-md text-2xl' required />
+                {login?<input type="text" placeholder='Name' className='w-full px-3 py-3 rounded-lg border-[1px] outline-none focus:shadow-md formname text-2xl bg-white' required />:""}
+                <input type="email" placeholder='Email' className='w-full px-3 py-2 rounded-lg border-[1px] outline-none focus:shadow-md text-2xl bg-white' required />
                 <label className='relative'>
-                <input type={`${pass?"Password":"text"}`} placeholder='Password' className='w-full px-3 py-3 rounded-lg border-[1px] outline-none focus:shadow-md relative text-2xl' required  />
+                <input type={`${pass?"Password":"text"}`} placeholder='Password' className='w-full px-3 py-3 rounded-lg border-[1px] outline-none focus:shadow-md relative text-2xl bg-white' required  />
                 {pass?<i className="ri-eye-off-line absolute right-4 text-zinc-400 cursor-pointer top-4 text-2xl" onClick={()=>setPass(false)}></i>:<i className="ri-eye-line absolute right-4 text-zinc-600 cursor-pointer top-4 text-2xl" onClick={()=>setPass(true)}></i>}
                 </label>
                 <label className='text-lg font-semibold text-zinc-500 flex flex-row items-start pt-2 pl-2 cursor-pointer gap-2 '>
-            <input type="checkbox" name="option1"  className='mt-1 cursor-pointer shadow-2xl largerCheckbox' required/>
+            <input type="checkbox" name="option1"  className='mt-1 cursor-pointer shadow-2xl largerCheckbox bg-white ' required/>
             <p>
             Lorem ipsum, dolor sit amet  quisquam!</p>
            </label>
