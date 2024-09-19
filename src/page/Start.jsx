@@ -32,7 +32,7 @@ const Start = () => {
             <div className="w-10 h-10 bg-purple-400 rounded-full"></div>
             <p className='absolute top-2 right-5 text-[10px] text-zinc-400'>1min</p>
             <div className='flex flex-col pl-2'>
-                <p className='font-bold '>하이웹.</p>
+                <p className='font-bold text-black'>하이웹.</p>
                 <p className='font-semibold text-zinc-500 text-[13px] '>That's so funny 🤣</p>
             </div>
            </div>
@@ -41,7 +41,7 @@ const Start = () => {
            <div className="w-10 h-10 bg-purple-400 rounded-full"></div>
             <p className='absolute top-2 right-5 text-[10px] text-zinc-400'>now</p>
             <div className='flex flex-col pl-2'>
-                <p className='font-bold '>Rupesh.</p>
+                <p className='font-bold text-black'>Rupesh.</p>
                 <p className='font-semibold text-zinc-500 text-[13px] '>That's so funny 🤣</p>
             </div>
            </div>
@@ -49,7 +49,7 @@ const Start = () => {
 
          {/* iphone end */}
 
-        <h1 className={` absolute bottom-40 z-10 text-3xl font-bold text text-center  max-[420px]:text-2xl ${show?"hidden":""} `}>Lorem ipsum dolor sit amet.</h1>
+        <h1 className={` absolute bottom-40 z-10 text-3xl font-bold text text-center  max-[420px]:text-2xl ${show?"hidden":""} text-black`}>Lorem ipsum dolor sit amet.</h1>
         <h1 className={` absolute bottom-32 z-10 text-sm  text-zinc-500 text2 max-[420px]:bottom-[118px] max-[420px]:w-[70%] ${show?"hidden":""} max-[420px]:text-center`}> Lorem ipsum dolor sit amet consectetur adipisicing elit. </h1>
        <h1 className={` ${show?"hidden":""} absolute bottom-16 z-10 bg-black w-80 py-3 rounded-lg text-white text-center font-semibold cursor-pointer text2 max-[420px]:bottom-12`} onClick={()=>setShow(true)}>Let's Chat</h1>
        <div className=" absolute bottom-0 w-full h-[40vh] overlay z-[5]"></div>
