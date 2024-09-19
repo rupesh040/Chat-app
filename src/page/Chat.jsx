@@ -24,9 +24,9 @@ const Chat = () => {
             <Bubble/>
             </div>
             <div className="w-full h-16 absolute bottom-0  flex justify-center items-center z-10 bg-[#f0f3f6]">
-                <div className="w-[90%] h-10 rounded-lg bg-white shadow-lg flex items-center justify-between px-4  ">
-                    <input type="text" placeholder='Message...' className='w-[90%] text-lg outline-none bg-transparent' />
-                    <i className="ri-send-plane-fill text-lg font-bold "></i>
+                <div className="w-[90%] h-12 rounded-lg bg-white shadow-lg flex items-center justify-between px-4  ">
+                    <input type="text" placeholder='Message...' className='w-[90%] text-lg outline-none bg-transparent text-black' />
+                    <i className="ri-send-plane-fill text-lg font-bold text-black cursor-pointer "></i>
                 </div>
             </div>
         </div>
