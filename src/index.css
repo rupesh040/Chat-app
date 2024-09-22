@@ -261,3 +261,23 @@ input.largerCheckbox {
         opacity: 1;
     }
 }
+
+
+.logout{
+    animation: logout .3s ease-in-out;
+    transform-origin: right;
+
+}
+
+@keyframes logout {
+    0%{
+        transform: rotate(90deg);
+        opacity: 0;
+        filter: blur(10px);
+    }
+    100%{
+        transform: rotate(0deg);
+        opacity: 1;
+        filter: blur(0px);
+    }
+}
