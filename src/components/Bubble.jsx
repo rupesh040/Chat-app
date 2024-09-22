@@ -7,8 +7,10 @@ const Bubble = () => {
   <div className="chat-bubble chat-bubble-primary bg-gray-700 text-white">What</div>
 </div>
 <div className="chat chat-end  bg-[#f0f3f6]">
-  <div className="chat-bubble chat-bubble-info text-zinc-700 bg-white  shadow-sm">Calm down, Anakin.</div>
+  <div className="chat-bubble chat-bubble-info text-zinc-700 bg-white  shadow-sm relative">Calm down, Anakin.</div>
+
 </div>
+
 </>
   )
 }
